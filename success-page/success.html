@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="./success-styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="info-container">
+      <div class="success-icon">
+          <img src="../assets/images/icon-success.svg" alt="success icon">
+        </div>
+        <h1>Stay updated!</h1>
+        <p>
+            Thanks for subscribing! A confirmation email has been sent <span id="target-email"></span>. Please open it and click the button inside to confirm
+            your subscription. 
+        </p>
+        <script>
+          document.querySelector("#target-email").textContent = localStorage.getItem("emailAdress");
+        </script>
+        <a href="../../index.html" id="dismiss-link">
+            <button id="dismiss-btn">Dismiss message</button>
+        </a>
+      </divclass=>
+    </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/ArmOwOn" target="_blank">ArmOwOn</a>.
+    </div>
+  </body>
+</html>

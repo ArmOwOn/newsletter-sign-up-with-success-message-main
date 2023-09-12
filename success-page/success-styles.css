@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--DarkSlateGrey);
+}
+
+.card {
+  margin: 4rem;
+  height: 600px;
+  width: fit-content;
+  max-width: 600px;
+  border-radius: 1em;
+  background-color: var(--White);
+  display: flex;
+}
+.info-container {
+  font-size: 1.2rem;
+  padding: 3em;
+  line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container .success-icon {
+  margin: 3rem 0 0;
+}
+.info-container h1 {
+  margin: 1rem 0;
+  font-size: 4rem;
+  color: var(--CharcoalGrey);
+  padding-top: 2rem;
+  line-height: 4rem;
+}
+
+.info-container p {
+  margin: 1rem 0;
+  color: var(--CharcoalGrey);
+}
+
+.info-container p #target-email {
+  font-weight: 700;
+}
+
+.info-container a {
+  margin-top: auto;
+}
+.info-container #dismiss-btn {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: var(--CharcoalGrey);
+  color: var(--White);
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.info-container #dismiss-btn:hover {
+  background-color: var(--Tomato);
+}
+
+.attribution {
+  color: var(--Grey);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Tomato);
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    margin: 0;
+    height: 100%;
+    border-radius: 0;
+  }
+  .info-container {
+    padding: 2rem;
+  }
+  .info-container h1 {
+    font-size: 2.5rem;
+    padding-top: 0;
+  }
+  .info-container #dismiss-btn {
+    margin: 1rem 0;
+  }
+}
